@@ -29,7 +29,7 @@ python predictive_accuracy.py -input_csv ../data/clu_rep_test.csv -output_csv ./
 ```
 Note: Using 5 models at the same time requires at least 24G of GPU memory!
 
-#### Mutation Prediction
+#### Mutations Prediction
 ```bash
 # for sequence
 python get_mutation.py -input_type sequence -name seq1 -sequence "LQLVESGGGLVQSGGSLRPSCAASGGTSSSYVRGWFRQSPGKEREFVASISWVADLTYYADSMKGRFTISRDTAKNTVYLQMNSLKPEDTAVYYCAADSGRGLGSFDYWGQGTQVTVSS" -output_csv out_mut.csv -model_checkpoints EvoNB_1+EvoNB_2+EvoNB_3+EvoNB_4+EvoNB_5 -n 5 -device cuda
