@@ -2,7 +2,10 @@
 ### Code accompanying the article `"EvoNB: A Protein Language Model-Based Workflow for Nanobody Mutation Prediction and Optimisation"`.
 
 We fine-tuned [esm2_t33_650M_UR50D](https://github.com/facebookresearch/esm?tab=readme-ov-file) with approximately 7.66 million nanobody sequences. The full dataset and the fine-tuned models are available [here](https://huggingface.co/datasets/Dannyang/Nanobody_Sequence_Dataset).    
-          
+
+
+
+
 The following example outlines the steps for data preprocessing, model fine-tuning, and testing, along with guidance on using the model to predict mutations within nanobody sequences.
 
 #### Data Preprocessing
@@ -22,7 +25,7 @@ python predictive_accuracy.py -input_csv ../data/clu_rep_test.csv -output_csv ./
 # for multiple models
 python predictive_accuracy.py -input_csv ../data/clu_rep_test.csv -output_csv ./out_pred.csv -models EvoNB_1+EvoNB_2+EvoNB_3+EvoNB_4+EvoNB_5 -device cuda
 ```
-Note: Using 5 models at the same time requires at least 24G of GPU memory!!!
+Note: Using 5 models at the same time requires at least 24G of GPU memory!
 
 #### Mutation Prediction
 ```bash
