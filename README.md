@@ -8,7 +8,7 @@ We fine-tuned [esm2_t33_650M_UR50D](https://github.com/facebookresearch/esm?tab=
 conda env create -f environment.yml
 ```
                                                      
-The following example outlines the steps for data preprocessing, model fine-tuning, and testing, along with guidance on using the model to predict mutations within nanobody sequences.
+The following example outlines the steps for data preprocessing, model fine-tuning, and accuracy evaluation, along with guidance on using the model to predict mutations within nanobody sequences.
 
 #### Data Preprocessing
 ```bash
