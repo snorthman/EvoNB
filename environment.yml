@@ -1,0 +1,18 @@
+name: EvoNB
+channels:
+  - conda-forge
+  - bioconda
+  - pytorch
+  - nvidia
+dependencies:
+  - python=3.9
+  - mmseqs2
+  - pytorch==2.1.1
+  - torchvision==0.16.1
+  - torchaudio==2.1.1
+  - pytorch-cuda=11.8
+  - tqdm==4.66.1
+  - transformers==4.40.2
+  - datasets==2.19.1
+  - pandas==1.2.4
+  - numpy==1.26.3
