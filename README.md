@@ -32,7 +32,7 @@ Note: Using 5 models at the same time requires at least 24G of GPU memory!
 #### Mutations Prediction
 ```bash
 # for sequence
-python get_mutation.py -input_type sequence -name seq1 -sequence "LQLVESGGGLVQSGGSLRPSCAASGGTSSSYVRGWFRQSPGKEREFVASISWVADLTYYADSMKGRFTISRDTAKNTVYLQMNSLKPEDTAVYYCAADSGRGLGSFDYWGQGTQVTVSS" -output_csv out_mut.csv -model_checkpoints EvoNB_1+EvoNB_2+EvoNB_3+EvoNB_4+EvoNB_5 -n 5 -device cuda
+python get_mutation.py -input_type sequence -name seq1 -sequence "QVQLVESGGGLVQSGGSLRLSCAASGSIFRTTGMNWYRQTPEKQREWVALITSHGTTSYAASVEGRFTISRDSAGTTVYLQMNSLKPEDAGVYYCTTRGYWGQGTQVTVSS" -output_csv out_mut.csv -model_checkpoints EvoNB_1+EvoNB_2+EvoNB_3+EvoNB_4+EvoNB_5 -n 5 -device cuda
 # for csv file
 python get_mutation.py -input_type csv -input_data ./example_mut/example.csv -output_csv out_mut.csv -model_checkpoints EvoNB_1+EvoNB_2+EvoNB_3+EvoNB_4+EvoNB_5 -n 5 -device cuda
 # for fasta file
