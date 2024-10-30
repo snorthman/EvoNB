@@ -1,7 +1,7 @@
 # EvoNB
 ### Code accompanying the article `"EvoNB: A Protein Language Model-Based Workflow for Nanobody Mutation Prediction and Optimisation"`.
 
-We fine-tuned [esm2_t33_650M_UR50D](https://github.com/facebookresearch/esm?tab=readme-ov-file) with approximately 7.66 million nanobody sequences. The full dataset and the fine-tuned models are available [here](https://huggingface.co/datasets/Dannyang/Nanobody_Sequence_Dataset).    
+We fine-tuned [esm2_t33_650M_UR50D](https://github.com/facebookresearch/esm?tab=readme-ov-file) with approximately 7.66 million nanobody sequences. The full [dataset](https://huggingface.co/datasets/Dannyang/Nanobody_Sequence_Dataset) and the fine-tuned [models](https://huggingface.co/Dannyang/EvoNB_1) are available at [huggingface](https://huggingface.co/).    
 
 #### Environment Setup
 ```bash
