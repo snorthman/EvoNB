@@ -1,0 +1,7 @@
+tqdm==4.66.1
+datasets==2.19.1
+pandas==1.2.4
+numpy==1.26.3
+
+--prefer-binary
+transformers==4.40.2

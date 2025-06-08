@@ -5,7 +5,12 @@ We fine-tuned [esm2_t33_650M_UR50D](https://github.com/facebookresearch/esm?tab=
 
 #### Environment Setup
 ```bash
-conda env create -f environment.yml
+pip install -r requirements.txt
+pip install torch --index-url https://download.pytorch.org/whl/cu118
+wget -O /tmp/mmseqs-linux-avx2.tar.gz https://mmseqs.com/latest/mmseqs-linux-avx2.tar.gz
+tar xvfz /tmp/mmseqs-linux-avx2.tar.gz -C /tmp
+sudo mv /tmp/mmseqs-linux-avx2 /usr/local/mmseqs
+sudo ln -s /usr/local/mmseqs/bin/mmseqs /usr/local/bin/mmseqs
 ```
 #
 The following example outlines the steps for data preprocessing, model fine-tuning, and accuracy evaluation, along with guidance on using the model to predict mutations within nanobody sequences.
